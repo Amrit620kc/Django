@@ -5,8 +5,6 @@ class PostForm(forms.ModelForm):
     class Meta:
         model=Post
         fields=['message',]
-
-
 class NewTopicForm(forms.ModelForm):
     message = forms.CharField(
         widget=forms.Textarea(
